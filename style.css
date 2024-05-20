@@ -1,0 +1,399 @@
+body{
+	background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+	margin: 30px;
+	letter-spacing: 1px;
+}
+
+/*To hide scroll bar*/
+
+body::-webkit-scrollbar{
+	display: none;
+}
+
+.app-name{
+	font-size: 4rem;
+	font-family: sans-serif;
+	font-weight: 700;
+}
+
+/*Styling for all h1 tags*/
+
+h1{
+	font-family:felix titling ;
+	margin-bottom: 60px;
+	text-shadow: white 1.5px 1px;
+}
+
+/*Styling for all h2 tags*/
+
+h2{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top:25%;
+	bottom: 0;
+	text-align: center;
+	font-family:sans-serif;
+	margin: auto;
+}
+
+/*Styling for all h4 tags*/
+
+h4{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top:60%;
+	bottom: 0;
+	text-align: center;
+	font-family:sans-serif;
+	margin: auto;
+	color: lightslategray;
+}
+
+/*Styiling for container div*/
+
+.container{
+	position: relative;
+	top: 0;
+	height:300px;
+	width:60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+}
+
+/*Styling for searchbox*/
+
+.search-box{
+	height: 50px;
+	width: 60%;
+	align-self: center;
+	border-radius: 20px;
+	border: none;
+	font-size: 1.7rem;
+	font-family: cursive;
+	text-align: center;
+	background-color: inherit;
+	box-shadow: 0px 0px 10px 1px whitesmoke;
+	color: darkviolet;
+}
+
+/*Styling searchbox on hover over*/
+
+.search-box:hover{
+	background-color:lightsalmon;
+	box-shadow: white 0px 0px 3px 3px;
+}
+.search-box:focus{
+	background-color: white;
+	box-shadow: white 0px 0px 4px 4px;
+}
+
+
+/*Styling for search button*/
+
+.search-button{
+	height: 50px;
+	width: 60%;
+	align-self: center;
+	border-radius: 20px;
+	background-color: inherit;
+	font-family: sans-serif;
+	font-size: 1.7rem;
+	letter-spacing: 1px;
+	transition: .1s all;
+	cursor: pointer;
+	border:none;
+	box-shadow: 0px 0px 10px 1px whitesmoke;
+	color: black;
+	letter-spacing: 5px;
+	
+}
+
+/*Styiling for search button on hovering*/
+
+.search-button:hover{
+	box-shadow: white 0px 0px 5px 5px;
+	background-color: lightgray;
+	color: white;
+	font-size: 1.85rem;
+
+}
+
+/*Styling for item class that will be appended into html by javascript*/
+
+.item{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-left: 0px;
+	font-family: cooper;
+	text-decoration:capitalize;
+}
+
+.no-favs{
+	text-align: center;
+	margin: auto;
+	margin-bottom: 2px;
+}
+/*Styling image that present in the item class*/
+
+.item img{
+	position: relative;
+	top:7px;
+	right: 10px;
+	height: 35%;
+	width: 11%;
+}
+
+/*Styling for anchor tag that present in the item class*/
+
+.item a{
+	margin-left: 5px;
+	text-align: left;
+}
+
+/*Styling for img on hivering*/
+
+.item img:hover{
+	transform: scale(1.2);
+}
+
+/*Styilng for dropdown items div*/
+
+#dropdown-item{
+	position: absolute;
+	top:5%;
+	left: 3%;
+	background-color: lightcyan;
+	border-radius: 10px;
+}
+#dropdown-item:hover{
+	box-shadow: 0px 0px 5px 2px gray;
+}
+#dropdown-item a{
+	font-family: cursive;
+	color: lightcoral;
+
+}
+@keyframes zoomin{
+	from{
+		transform: scale(1.0);
+	}
+	to{
+		transform: scale(1.15);
+	}
+}
+.dropdown-div-anim{
+	animation: zoomin .1s ease-in-out alternate;
+}
+
+/*Styilng for space div, basically this is where movies will be shown*/
+
+.space{
+	position: relative;
+	margin:auto;
+	margin-top: 50px;
+	padding: 50px;
+	height: auto;
+	width:90%;
+	border-radius: 30px;
+	background-color:lightgray;
+	box-shadow: 0px 0px 5px 5px white;
+}
+.error-msg{
+	text-align: center;
+	font-size: 2rem;
+
+}
+
+/*Movie poster styling*/
+
+.movie-poster{
+	position: relative;
+	border-radius: 1rem;
+	background-color:;
+	width: 40%;
+	height: 600px;
+	transition: .3s ease-in;
+	box-shadow: 0px 0px 10px 3px black;
+	
+}
+.movie-poster:hover{
+	transform: scale(1.02);
+	box-shadow: 0px 0px 5px 5px darkviolet;
+	background-size:cover ;
+}
+.poster-and-movie-deltails{
+	width:auto;
+	height:auto;
+	display:flex;
+}
+.clear{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	height: 50px;
+	width: 50px;
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	transition: all .1s ease-in-out;
+}
+.clear:hover{
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+/*Styling the movie details name, actors...*/
+
+ul{
+	position: relative;
+	top: 0px;
+	width: auto;
+	height: 600px;
+	background-color: whitesmoke;
+	list-style-type: none;
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 5%;
+	margin-left: 20px;
+
+}
+li{
+	position: relative;
+	width: 100%;
+	height: auto;
+	border-radius: .7rem;
+	margin-left: -6%;
+	display: flex;
+	color: darkviolet;
+}
+
+.category{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: darkviolet;
+	height: auto;
+	padding: 10px;
+	width: 200px;
+	border-radius: 10px;
+	color: whitesmoke;
+}
+
+.category-detail{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-left: 10px;
+	background-color: lightgray;
+	margin: auto;
+	margin-left: 10px;
+	padding: 10px;
+	border-radius: 10px;
+
+}
+.category-detail:hover{
+	transform: scale(1.005);
+	box-shadow: 0px 0px 7px 1px darkviolet;
+}
+/*Like button by font awesome*/
+
+.add-to-fav-button{
+	position: absolute;
+	top:2%;
+	right: 0%;
+	height: 7%;
+	width: 7%;
+	color: red;
+	transition:all .2s ease-in;
+	z-index: 1;
+} 		
+.add-to-fav-button:hover{
+	transform: scale(1.2);
+	color:red;
+}
+
+
+.movie-story{
+	position: relative;
+	top:10px;
+	height: auto;
+	width: 100%;
+	background-color: darkviolet;
+	display: flex;
+	padding: 20px;
+	border-radius: 20px;
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	color: white;
+}
+/*Media query for make my page looks good on small screens*/
+
+@media screen and (max-width:900px){
+	.container{
+		width: 100%;
+	}
+	.app-name{
+		font-size: 3rem;
+	}
+	#dropdown-item{
+		position: absolute;
+		top: 5px;
+		left: 5px;
+	}
+	.search-box{
+		width: 90%;
+	}
+	.search-button{
+		width: 90%;
+	}
+	.space{
+		position: relative;
+		top:0px;
+		display: block;
+		width: 100%;
+		padding: 20px;
+		padding-bottom: 60px;
+	}
+	.movie-poster{
+		width: 100%;
+	}
+	.poster-and-movie-deltails{
+		display: flex;
+		flex-direction: column;
+	}
+	.movie-story{
+		position: relative;
+		top: 50px;
+	}
+	ul{
+		position: relative;
+		top: 30px;
+		width: 100%;
+		font-size: 1.2rem;
+		background-color: whitesmoke;
+		margin: auto;
+	}
+	li{
+		margin-left: -40px;
+	}
+	.add-to-fav-button{
+	    position: absolute;
+	    top:-2%;
+	    right: 2%;
+	}	
+
+}
