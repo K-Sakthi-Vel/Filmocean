@@ -1,7 +1,7 @@
 # IMDB-Clone
 Search movies and explore details about the movies
 
-LIVE APP: https://sakthivel-programmer.github.io/Filmocean/
+LIVE APP: https://filmocean.vercel.app/
 
 This is sakthivel k.
 
