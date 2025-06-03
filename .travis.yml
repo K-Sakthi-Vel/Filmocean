@@ -1,0 +1,14 @@
+language: minimal
+
+# No build step, but we can add a deployment step or a simple check
+script:
+  - echo "Static site build - no build process, just static files."
+
+# Optional: Deploy to GitHub Pages if needed
+# deploy:
+#   provider: pages
+#   skip_cleanup: true
+#   github_token: $GITHUB_TOKEN  # Set in Travis CI settings
+#   local_dir: .  # Or the folder you want to deploy
+#   on:
+#     branch: main  # Or your default branch
